@@ -1,0 +1,471 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		9670C6721471F4D3004FA2B7 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9670C6711471F4D3004FA2B7 /* UIKit.framework */; };
+		9670C6741471F4D3004FA2B7 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9670C6731471F4D3004FA2B7 /* Foundation.framework */; };
+		9670C6761471F4D3004FA2B7 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9670C6751471F4D3004FA2B7 /* CoreGraphics.framework */; };
+		9670C6781471F4D3004FA2B7 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9670C6771471F4D3004FA2B7 /* CoreData.framework */; };
+		9670C67E1471F4D3004FA2B7 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 9670C67C1471F4D3004FA2B7 /* InfoPlist.strings */; };
+		9670C6801471F4D3004FA2B7 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 9670C67F1471F4D3004FA2B7 /* main.m */; };
+		9670C6841471F4D3004FA2B7 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 9670C6831471F4D3004FA2B7 /* AppDelegate.m */; };
+		9670C6871471F4D3004FA2B7 /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9670C6851471F4D3004FA2B7 /* MainStoryboard.storyboard */; };
+		9670C68A1471F4D3004FA2B7 /* backcountrytracker.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 9670C6881471F4D3004FA2B7 /* backcountrytracker.xcdatamodeld */; };
+		9670C68D1471F4D3004FA2B7 /* MasterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9670C68C1471F4D3004FA2B7 /* MasterViewController.m */; };
+		9670C6901471F4D3004FA2B7 /* DetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9670C68F1471F4D3004FA2B7 /* DetailViewController.m */; };
+		9670C6981471F4D3004FA2B7 /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9670C6971471F4D3004FA2B7 /* SenTestingKit.framework */; };
+		9670C6991471F4D3004FA2B7 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9670C6711471F4D3004FA2B7 /* UIKit.framework */; };
+		9670C69A1471F4D3004FA2B7 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9670C6731471F4D3004FA2B7 /* Foundation.framework */; };
+		9670C69B1471F4D3004FA2B7 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9670C6771471F4D3004FA2B7 /* CoreData.framework */; };
+		9670C6A31471F4D3004FA2B7 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 9670C6A11471F4D3004FA2B7 /* InfoPlist.strings */; };
+		9670C6A61471F4D3004FA2B7 /* backcountrytrackerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 9670C6A51471F4D3004FA2B7 /* backcountrytrackerTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		9670C69C1471F4D3004FA2B7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9670C6641471F4D3004FA2B7 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9670C66C1471F4D3004FA2B7;
+			remoteInfo = backcountrytracker;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		9670C66D1471F4D3004FA2B7 /* backcountrytracker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = backcountrytracker.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		9670C6711471F4D3004FA2B7 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		9670C6731471F4D3004FA2B7 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		9670C6751471F4D3004FA2B7 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		9670C6771471F4D3004FA2B7 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		9670C67B1471F4D3004FA2B7 /* backcountrytracker-Info.plist */ = {isa = PBXFileReference; path = "backcountrytracker-Info.plist"; sourceTree = "<group>"; };
+		9670C67D1471F4D3004FA2B7 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		9670C67F1471F4D3004FA2B7 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		9670C6811471F4D3004FA2B7 /* backcountrytracker-Prefix.pch */ = {isa = PBXFileReference; path = "backcountrytracker-Prefix.pch"; sourceTree = "<group>"; };
+		9670C6821471F4D3004FA2B7 /* AppDelegate.h */ = {isa = PBXFileReference; path = AppDelegate.h; sourceTree = "<group>"; };
+		9670C6831471F4D3004FA2B7 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		9670C6861471F4D3004FA2B7 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
+		9670C6891471F4D3004FA2B7 /* backcountrytracker.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = backcountrytracker.xcdatamodel; sourceTree = "<group>"; };
+		9670C68B1471F4D3004FA2B7 /* MasterViewController.h */ = {isa = PBXFileReference; path = MasterViewController.h; sourceTree = "<group>"; };
+		9670C68C1471F4D3004FA2B7 /* MasterViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MasterViewController.m; sourceTree = "<group>"; };
+		9670C68E1471F4D3004FA2B7 /* DetailViewController.h */ = {isa = PBXFileReference; path = DetailViewController.h; sourceTree = "<group>"; };
+		9670C68F1471F4D3004FA2B7 /* DetailViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DetailViewController.m; sourceTree = "<group>"; };
+		9670C6961471F4D3004FA2B7 /* backcountrytrackerTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = backcountrytrackerTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
+		9670C6971471F4D3004FA2B7 /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
+		9670C6A01471F4D3004FA2B7 /* backcountrytrackerTests-Info.plist */ = {isa = PBXFileReference; path = "backcountrytrackerTests-Info.plist"; sourceTree = "<group>"; };
+		9670C6A21471F4D3004FA2B7 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		9670C6A41471F4D3004FA2B7 /* backcountrytrackerTests.h */ = {isa = PBXFileReference; path = backcountrytrackerTests.h; sourceTree = "<group>"; };
+		9670C6A51471F4D3004FA2B7 /* backcountrytrackerTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = backcountrytrackerTests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		9670C66A1471F4D3004FA2B7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9670C6721471F4D3004FA2B7 /* UIKit.framework in Frameworks */,
+				9670C6741471F4D3004FA2B7 /* Foundation.framework in Frameworks */,
+				9670C6761471F4D3004FA2B7 /* CoreGraphics.framework in Frameworks */,
+				9670C6781471F4D3004FA2B7 /* CoreData.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9670C6921471F4D3004FA2B7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9670C6981471F4D3004FA2B7 /* SenTestingKit.framework in Frameworks */,
+				9670C6991471F4D3004FA2B7 /* UIKit.framework in Frameworks */,
+				9670C69A1471F4D3004FA2B7 /* Foundation.framework in Frameworks */,
+				9670C69B1471F4D3004FA2B7 /* CoreData.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		9670C6621471F4D3004FA2B7 = {
+			isa = PBXGroup;
+			children = (
+				9670C6791471F4D3004FA2B7 /* backcountrytracker */,
+				9670C69E1471F4D3004FA2B7 /* backcountrytrackerTests */,
+				9670C6701471F4D3004FA2B7 /* Frameworks */,
+				9670C66E1471F4D3004FA2B7 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		9670C66E1471F4D3004FA2B7 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				9670C66D1471F4D3004FA2B7 /* backcountrytracker.app */,
+				9670C6961471F4D3004FA2B7 /* backcountrytrackerTests.octest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		9670C6701471F4D3004FA2B7 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				9670C6711471F4D3004FA2B7 /* UIKit.framework */,
+				9670C6731471F4D3004FA2B7 /* Foundation.framework */,
+				9670C6751471F4D3004FA2B7 /* CoreGraphics.framework */,
+				9670C6771471F4D3004FA2B7 /* CoreData.framework */,
+				9670C6971471F4D3004FA2B7 /* SenTestingKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		9670C6791471F4D3004FA2B7 /* backcountrytracker */ = {
+			isa = PBXGroup;
+			children = (
+				9670C6821471F4D3004FA2B7 /* AppDelegate.h */,
+				9670C6831471F4D3004FA2B7 /* AppDelegate.m */,
+				9670C6851471F4D3004FA2B7 /* MainStoryboard.storyboard */,
+				9670C68B1471F4D3004FA2B7 /* MasterViewController.h */,
+				9670C68C1471F4D3004FA2B7 /* MasterViewController.m */,
+				9670C68E1471F4D3004FA2B7 /* DetailViewController.h */,
+				9670C68F1471F4D3004FA2B7 /* DetailViewController.m */,
+				9670C6881471F4D3004FA2B7 /* backcountrytracker.xcdatamodeld */,
+				9670C67A1471F4D3004FA2B7 /* Supporting Files */,
+			);
+			path = backcountrytracker;
+			sourceTree = "<group>";
+		};
+		9670C67A1471F4D3004FA2B7 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				9670C67B1471F4D3004FA2B7 /* backcountrytracker-Info.plist */,
+				9670C67C1471F4D3004FA2B7 /* InfoPlist.strings */,
+				9670C67F1471F4D3004FA2B7 /* main.m */,
+				9670C6811471F4D3004FA2B7 /* backcountrytracker-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		9670C69E1471F4D3004FA2B7 /* backcountrytrackerTests */ = {
+			isa = PBXGroup;
+			children = (
+				9670C6A41471F4D3004FA2B7 /* backcountrytrackerTests.h */,
+				9670C6A51471F4D3004FA2B7 /* backcountrytrackerTests.m */,
+				9670C69F1471F4D3004FA2B7 /* Supporting Files */,
+			);
+			path = backcountrytrackerTests;
+			sourceTree = "<group>";
+		};
+		9670C69F1471F4D3004FA2B7 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				9670C6A01471F4D3004FA2B7 /* backcountrytrackerTests-Info.plist */,
+				9670C6A11471F4D3004FA2B7 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		9670C66C1471F4D3004FA2B7 /* backcountrytracker */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9670C6A91471F4D3004FA2B7 /* Build configuration list for PBXNativeTarget "backcountrytracker" */;
+			buildPhases = (
+				9670C6691471F4D3004FA2B7 /* Sources */,
+				9670C66A1471F4D3004FA2B7 /* Frameworks */,
+				9670C66B1471F4D3004FA2B7 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = backcountrytracker;
+			productName = backcountrytracker;
+			productReference = 9670C66D1471F4D3004FA2B7 /* backcountrytracker.app */;
+			productType = "com.apple.product-type.application";
+		};
+		9670C6951471F4D3004FA2B7 /* backcountrytrackerTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9670C6AC1471F4D3004FA2B7 /* Build configuration list for PBXNativeTarget "backcountrytrackerTests" */;
+			buildPhases = (
+				9670C6911471F4D3004FA2B7 /* Sources */,
+				9670C6921471F4D3004FA2B7 /* Frameworks */,
+				9670C6931471F4D3004FA2B7 /* Resources */,
+				9670C6941471F4D3004FA2B7 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				9670C69D1471F4D3004FA2B7 /* PBXTargetDependency */,
+			);
+			name = backcountrytrackerTests;
+			productName = backcountrytrackerTests;
+			productReference = 9670C6961471F4D3004FA2B7 /* backcountrytrackerTests.octest */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		9670C6641471F4D3004FA2B7 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0420;
+			};
+			buildConfigurationList = 9670C6671471F4D3004FA2B7 /* Build configuration list for PBXProject "backcountrytracker" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 9670C6621471F4D3004FA2B7;
+			productRefGroup = 9670C66E1471F4D3004FA2B7 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				9670C66C1471F4D3004FA2B7 /* backcountrytracker */,
+				9670C6951471F4D3004FA2B7 /* backcountrytrackerTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		9670C66B1471F4D3004FA2B7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9670C67E1471F4D3004FA2B7 /* InfoPlist.strings in Resources */,
+				9670C6871471F4D3004FA2B7 /* MainStoryboard.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9670C6931471F4D3004FA2B7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9670C6A31471F4D3004FA2B7 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		9670C6941471F4D3004FA2B7 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		9670C6691471F4D3004FA2B7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9670C6801471F4D3004FA2B7 /* main.m in Sources */,
+				9670C6841471F4D3004FA2B7 /* AppDelegate.m in Sources */,
+				9670C68A1471F4D3004FA2B7 /* backcountrytracker.xcdatamodeld in Sources */,
+				9670C68D1471F4D3004FA2B7 /* MasterViewController.m in Sources */,
+				9670C6901471F4D3004FA2B7 /* DetailViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9670C6911471F4D3004FA2B7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9670C6A61471F4D3004FA2B7 /* backcountrytrackerTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		9670C69D1471F4D3004FA2B7 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 9670C66C1471F4D3004FA2B7 /* backcountrytracker */;
+			targetProxy = 9670C69C1471F4D3004FA2B7 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		9670C67C1471F4D3004FA2B7 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9670C67D1471F4D3004FA2B7 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		9670C6851471F4D3004FA2B7 /* MainStoryboard.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9670C6861471F4D3004FA2B7 /* en */,
+			);
+			name = MainStoryboard.storyboard;
+			sourceTree = "<group>";
+		};
+		9670C6A11471F4D3004FA2B7 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9670C6A21471F4D3004FA2B7 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		9670C6A71471F4D3004FA2B7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		9670C6A81471F4D3004FA2B7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		9670C6AA1471F4D3004FA2B7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "backcountrytracker/backcountrytracker-Prefix.pch";
+				INFOPLIST_FILE = "backcountrytracker/backcountrytracker-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		9670C6AB1471F4D3004FA2B7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "backcountrytracker/backcountrytracker-Prefix.pch";
+				INFOPLIST_FILE = "backcountrytracker/backcountrytracker-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		9670C6AD1471F4D3004FA2B7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/backcountrytracker.app/backcountrytracker";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(DEVELOPER_LIBRARY_DIR)/Frameworks",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "backcountrytracker/backcountrytracker-Prefix.pch";
+				INFOPLIST_FILE = "backcountrytrackerTests/backcountrytrackerTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Debug;
+		};
+		9670C6AE1471F4D3004FA2B7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/backcountrytracker.app/backcountrytracker";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(DEVELOPER_LIBRARY_DIR)/Frameworks",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "backcountrytracker/backcountrytracker-Prefix.pch";
+				INFOPLIST_FILE = "backcountrytrackerTests/backcountrytrackerTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		9670C6671471F4D3004FA2B7 /* Build configuration list for PBXProject "backcountrytracker" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9670C6A71471F4D3004FA2B7 /* Debug */,
+				9670C6A81471F4D3004FA2B7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9670C6A91471F4D3004FA2B7 /* Build configuration list for PBXNativeTarget "backcountrytracker" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9670C6AA1471F4D3004FA2B7 /* Debug */,
+				9670C6AB1471F4D3004FA2B7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		9670C6AC1471F4D3004FA2B7 /* Build configuration list for PBXNativeTarget "backcountrytrackerTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9670C6AD1471F4D3004FA2B7 /* Debug */,
+				9670C6AE1471F4D3004FA2B7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		9670C6881471F4D3004FA2B7 /* backcountrytracker.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				9670C6891471F4D3004FA2B7 /* backcountrytracker.xcdatamodel */,
+			);
+			currentVersion = 9670C6891471F4D3004FA2B7 /* backcountrytracker.xcdatamodel */;
+			path = backcountrytracker.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 9670C6641471F4D3004FA2B7 /* Project object */;
+}
