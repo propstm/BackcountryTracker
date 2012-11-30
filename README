@@ -1,0 +1,18 @@
+BackcountryTracker was meant as a sample concept to store location (GPS) data, and be able to send that data to another person using SMS messaging. The app's core functionality has sincebeen replaced by built-in Siri functionality.  This app is only a concept and cannot be verified to work in an actual emergency.
+
+
+USAGE OF APP:
+Upon clicking the 'Settings' tab the user is taken to the settings view controller where they may add a trip
+name, trip location and select a contact.  
+
+Selecting a contact opens a prompt wherein they may choose an individual
+from their phone contacts.  These values are stored using NSUserDefaults.  
+
+By Clicking the 'back' button the user is taken back to the main page and the main UI element is a 
+button reading 'HELP'.
+
+If the user pushes that button the app will use the stored information, along with the user's current location data
+to create a pre-populated SMS message which is addressed to the predefined contact.
+
+If the user pushes the tab titled 'End Trip', they will be prompted to verify they have ended their trip, at 
+which time the stored values will be erased.
