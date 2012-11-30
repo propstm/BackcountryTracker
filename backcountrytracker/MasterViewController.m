@@ -15,7 +15,8 @@
 @end
 
 @implementation MasterViewController
-
+@synthesize latitudef, longitudef;
+@synthesize locationMgr;
 @synthesize fetchedResultsController = __fetchedResultsController;
 @synthesize managedObjectContext = __managedObjectContext;
 
@@ -26,6 +27,7 @@
 
 - (void)dealloc
 {
+    [locationMgr release];
     [__fetchedResultsController release];
     [__managedObjectContext release];
     [super dealloc];
@@ -38,6 +40,11 @@
 }
 
 #pragma mark - View lifecycle
+
+-(void)applicationDidFinishLaunching:(UIApplication *)application{
+
+}
+
 
 - (void)viewDidLoad
 {
@@ -169,7 +176,7 @@
     [fetchRequest setFetchBatchSize:20];
     
     // Edit the sort key as appropriate.
-    NSSortDescriptor *sortDescriptor = [[[NSSortDescriptor alloc] initWithKey:@"timeStamp" ascending:NO] autorelease];
+    NSSortDescriptor *sortDescriptor = [[[NSSortDescriptor alloc] initWithKey:@"latlong" ascending:NO] autorelease];
     NSArray *sortDescriptors = [NSArray arrayWithObjects:sortDescriptor, nil];
     
     [fetchRequest setSortDescriptors:sortDescriptors];
@@ -257,7 +264,7 @@
 - (void)configureCell:(UITableViewCell *)cell atIndexPath:(NSIndexPath *)indexPath
 {
     NSManagedObject *managedObject = [self.fetchedResultsController objectAtIndexPath:indexPath];
-    cell.textLabel.text = [[managedObject valueForKey:@"timeStamp"] description];
+    cell.textLabel.text = [[managedObject valueForKey:@"latlong"] description];
 }
 
 - (void)insertNewObject
@@ -267,9 +274,15 @@
     NSEntityDescription *entity = [[self.fetchedResultsController fetchRequest] entity];
     NSManagedObject *newManagedObject = [NSEntityDescription insertNewObjectForEntityForName:[entity name] inManagedObjectContext:context];
     
+    
+    //ADD LAT LONG INFO PUT THAT INTO THE VALUE FOR KEY TIMESTAMP -- HACK OH WELL.
+    NSString *local_lat = [NSString stringWithFormat:@"%.2f", self.latitudef];
+    NSString *local_long = [NSString stringWithFormat:@"%.2f", self.longitudef];
+    //NSString *result = [local_lat appendString: local_long]; 
+    
     // If appropriate, configure the new managed object.
     // Normally you should use accessor methods, but using KVC here avoids the need to add a custom class to the template.
-    [newManagedObject setValue:[NSDate date] forKey:@"timeStamp"];
+    //[newManagedObject setValue:"car" forKey:@"latlong"];
     
     // Save the context.
     NSError *error = nil;

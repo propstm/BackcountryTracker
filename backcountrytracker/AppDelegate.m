@@ -8,13 +8,14 @@
 
 #import "AppDelegate.h"
 
-#import "MasterViewController.h"
+#import "MasterVC.h"
 
 @implementation AppDelegate
 
 @synthesize window = _window;
 @synthesize managedObjectContext = __managedObjectContext;
 @synthesize managedObjectModel = __managedObjectModel;
+@synthesize navigationController = _navigationController;
 @synthesize persistentStoreCoordinator = __persistentStoreCoordinator;
 
 - (void)dealloc
@@ -29,9 +30,13 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     // Override point for customization after application launch.
-    UINavigationController *navigationController = (UINavigationController *)self.window.rootViewController;
-    MasterViewController *controller = (MasterViewController *)navigationController.topViewController;
-    controller.managedObjectContext = self.managedObjectContext;
+    self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
+    
+    MasterVC *controller = [[MasterVC alloc] initWithNibName:@"MasterVC" bundle:nil];
+    self.navigationController = [[UINavigationController alloc] initWithRootViewController:controller];
+    self.window.rootViewController = self.navigationController;
+    [self.window makeKeyAndVisible];
+    //controller.managedObjectContext = self.managedObjectContext;
     return YES;
 }
 							

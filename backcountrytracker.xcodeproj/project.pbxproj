@@ -14,9 +14,7 @@
 		9670C67E1471F4D3004FA2B7 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 9670C67C1471F4D3004FA2B7 /* InfoPlist.strings */; };
 		9670C6801471F4D3004FA2B7 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 9670C67F1471F4D3004FA2B7 /* main.m */; };
 		9670C6841471F4D3004FA2B7 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 9670C6831471F4D3004FA2B7 /* AppDelegate.m */; };
-		9670C6871471F4D3004FA2B7 /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9670C6851471F4D3004FA2B7 /* MainStoryboard.storyboard */; };
 		9670C68A1471F4D3004FA2B7 /* backcountrytracker.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 9670C6881471F4D3004FA2B7 /* backcountrytracker.xcdatamodeld */; };
-		9670C68D1471F4D3004FA2B7 /* MasterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9670C68C1471F4D3004FA2B7 /* MasterViewController.m */; };
 		9670C6901471F4D3004FA2B7 /* DetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9670C68F1471F4D3004FA2B7 /* DetailViewController.m */; };
 		9670C6981471F4D3004FA2B7 /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9670C6971471F4D3004FA2B7 /* SenTestingKit.framework */; };
 		9670C6991471F4D3004FA2B7 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9670C6711471F4D3004FA2B7 /* UIKit.framework */; };
@@ -24,6 +22,14 @@
 		9670C69B1471F4D3004FA2B7 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9670C6771471F4D3004FA2B7 /* CoreData.framework */; };
 		9670C6A31471F4D3004FA2B7 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 9670C6A11471F4D3004FA2B7 /* InfoPlist.strings */; };
 		9670C6A61471F4D3004FA2B7 /* backcountrytrackerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 9670C6A51471F4D3004FA2B7 /* backcountrytrackerTests.m */; };
+		9670C6B01471F68C004FA2B7 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9670C6AF1471F68C004FA2B7 /* MapKit.framework */; };
+		9670C6B21471F698004FA2B7 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9670C6B11471F697004FA2B7 /* CoreLocation.framework */; };
+		9690EBB61580173200317CEC /* MasterVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 9690EBB41580173200317CEC /* MasterVC.m */; };
+		9690EBB71580173200317CEC /* MasterVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9690EBB51580173200317CEC /* MasterVC.xib */; };
+		9690EBB91580251D00317CEC /* DetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9690EBB81580251D00317CEC /* DetailViewController.xib */; };
+		9690EBC015802B4500317CEC /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9690EBBF15802B4400317CEC /* MessageUI.framework */; };
+		9690EBC715803ACB00317CEC /* AddressBook.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9690EBC515803ACB00317CEC /* AddressBook.framework */; };
+		9690EBC815803ACB00317CEC /* AddressBookUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9690EBC615803ACB00317CEC /* AddressBookUI.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -42,24 +48,30 @@
 		9670C6731471F4D3004FA2B7 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		9670C6751471F4D3004FA2B7 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		9670C6771471F4D3004FA2B7 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
-		9670C67B1471F4D3004FA2B7 /* backcountrytracker-Info.plist */ = {isa = PBXFileReference; path = "backcountrytracker-Info.plist"; sourceTree = "<group>"; };
+		9670C67B1471F4D3004FA2B7 /* backcountrytracker-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "backcountrytracker-Info.plist"; sourceTree = "<group>"; };
 		9670C67D1471F4D3004FA2B7 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		9670C67F1471F4D3004FA2B7 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		9670C6811471F4D3004FA2B7 /* backcountrytracker-Prefix.pch */ = {isa = PBXFileReference; path = "backcountrytracker-Prefix.pch"; sourceTree = "<group>"; };
-		9670C6821471F4D3004FA2B7 /* AppDelegate.h */ = {isa = PBXFileReference; path = AppDelegate.h; sourceTree = "<group>"; };
+		9670C6811471F4D3004FA2B7 /* backcountrytracker-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "backcountrytracker-Prefix.pch"; sourceTree = "<group>"; };
+		9670C6821471F4D3004FA2B7 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		9670C6831471F4D3004FA2B7 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		9670C6861471F4D3004FA2B7 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
 		9670C6891471F4D3004FA2B7 /* backcountrytracker.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = backcountrytracker.xcdatamodel; sourceTree = "<group>"; };
-		9670C68B1471F4D3004FA2B7 /* MasterViewController.h */ = {isa = PBXFileReference; path = MasterViewController.h; sourceTree = "<group>"; };
-		9670C68C1471F4D3004FA2B7 /* MasterViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MasterViewController.m; sourceTree = "<group>"; };
-		9670C68E1471F4D3004FA2B7 /* DetailViewController.h */ = {isa = PBXFileReference; path = DetailViewController.h; sourceTree = "<group>"; };
+		9670C68E1471F4D3004FA2B7 /* DetailViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DetailViewController.h; sourceTree = "<group>"; };
 		9670C68F1471F4D3004FA2B7 /* DetailViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DetailViewController.m; sourceTree = "<group>"; };
 		9670C6961471F4D3004FA2B7 /* backcountrytrackerTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = backcountrytrackerTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
 		9670C6971471F4D3004FA2B7 /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
-		9670C6A01471F4D3004FA2B7 /* backcountrytrackerTests-Info.plist */ = {isa = PBXFileReference; path = "backcountrytrackerTests-Info.plist"; sourceTree = "<group>"; };
+		9670C6A01471F4D3004FA2B7 /* backcountrytrackerTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "backcountrytrackerTests-Info.plist"; sourceTree = "<group>"; };
 		9670C6A21471F4D3004FA2B7 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		9670C6A41471F4D3004FA2B7 /* backcountrytrackerTests.h */ = {isa = PBXFileReference; path = backcountrytrackerTests.h; sourceTree = "<group>"; };
+		9670C6A41471F4D3004FA2B7 /* backcountrytrackerTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = backcountrytrackerTests.h; sourceTree = "<group>"; };
 		9670C6A51471F4D3004FA2B7 /* backcountrytrackerTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = backcountrytrackerTests.m; sourceTree = "<group>"; };
+		9670C6AF1471F68C004FA2B7 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		9670C6B11471F697004FA2B7 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		9690EBB31580173200317CEC /* MasterVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MasterVC.h; sourceTree = "<group>"; };
+		9690EBB41580173200317CEC /* MasterVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MasterVC.m; sourceTree = "<group>"; };
+		9690EBB51580173200317CEC /* MasterVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MasterVC.xib; sourceTree = "<group>"; };
+		9690EBB81580251D00317CEC /* DetailViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DetailViewController.xib; sourceTree = "<group>"; };
+		9690EBBF15802B4400317CEC /* MessageUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MessageUI.framework; path = System/Library/Frameworks/MessageUI.framework; sourceTree = SDKROOT; };
+		9690EBC515803ACB00317CEC /* AddressBook.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AddressBook.framework; path = System/Library/Frameworks/AddressBook.framework; sourceTree = SDKROOT; };
+		9690EBC615803ACB00317CEC /* AddressBookUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AddressBookUI.framework; path = System/Library/Frameworks/AddressBookUI.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -67,6 +79,11 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9690EBC715803ACB00317CEC /* AddressBook.framework in Frameworks */,
+				9690EBC815803ACB00317CEC /* AddressBookUI.framework in Frameworks */,
+				9690EBC015802B4500317CEC /* MessageUI.framework in Frameworks */,
+				9670C6B21471F698004FA2B7 /* CoreLocation.framework in Frameworks */,
+				9670C6B01471F68C004FA2B7 /* MapKit.framework in Frameworks */,
 				9670C6721471F4D3004FA2B7 /* UIKit.framework in Frameworks */,
 				9670C6741471F4D3004FA2B7 /* Foundation.framework in Frameworks */,
 				9670C6761471F4D3004FA2B7 /* CoreGraphics.framework in Frameworks */,
@@ -91,6 +108,11 @@
 		9670C6621471F4D3004FA2B7 = {
 			isa = PBXGroup;
 			children = (
+				9690EBC515803ACB00317CEC /* AddressBook.framework */,
+				9690EBC615803ACB00317CEC /* AddressBookUI.framework */,
+				9690EBBF15802B4400317CEC /* MessageUI.framework */,
+				9670C6B11471F697004FA2B7 /* CoreLocation.framework */,
+				9670C6AF1471F68C004FA2B7 /* MapKit.framework */,
 				9670C6791471F4D3004FA2B7 /* backcountrytracker */,
 				9670C69E1471F4D3004FA2B7 /* backcountrytrackerTests */,
 				9670C6701471F4D3004FA2B7 /* Frameworks */,
@@ -124,13 +146,14 @@
 			children = (
 				9670C6821471F4D3004FA2B7 /* AppDelegate.h */,
 				9670C6831471F4D3004FA2B7 /* AppDelegate.m */,
-				9670C6851471F4D3004FA2B7 /* MainStoryboard.storyboard */,
-				9670C68B1471F4D3004FA2B7 /* MasterViewController.h */,
-				9670C68C1471F4D3004FA2B7 /* MasterViewController.m */,
 				9670C68E1471F4D3004FA2B7 /* DetailViewController.h */,
+				9690EBB81580251D00317CEC /* DetailViewController.xib */,
 				9670C68F1471F4D3004FA2B7 /* DetailViewController.m */,
 				9670C6881471F4D3004FA2B7 /* backcountrytracker.xcdatamodeld */,
 				9670C67A1471F4D3004FA2B7 /* Supporting Files */,
+				9690EBB31580173200317CEC /* MasterVC.h */,
+				9690EBB41580173200317CEC /* MasterVC.m */,
+				9690EBB51580173200317CEC /* MasterVC.xib */,
 			);
 			path = backcountrytracker;
 			sourceTree = "<group>";
@@ -236,7 +259,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				9670C67E1471F4D3004FA2B7 /* InfoPlist.strings in Resources */,
-				9670C6871471F4D3004FA2B7 /* MainStoryboard.storyboard in Resources */,
+				9690EBB71580173200317CEC /* MasterVC.xib in Resources */,
+				9690EBB91580251D00317CEC /* DetailViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -274,8 +298,8 @@
 				9670C6801471F4D3004FA2B7 /* main.m in Sources */,
 				9670C6841471F4D3004FA2B7 /* AppDelegate.m in Sources */,
 				9670C68A1471F4D3004FA2B7 /* backcountrytracker.xcdatamodeld in Sources */,
-				9670C68D1471F4D3004FA2B7 /* MasterViewController.m in Sources */,
 				9670C6901471F4D3004FA2B7 /* DetailViewController.m in Sources */,
+				9690EBB61580173200317CEC /* MasterVC.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -304,14 +328,6 @@
 				9670C67D1471F4D3004FA2B7 /* en */,
 			);
 			name = InfoPlist.strings;
-			sourceTree = "<group>";
-		};
-		9670C6851471F4D3004FA2B7 /* MainStoryboard.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				9670C6861471F4D3004FA2B7 /* en */,
-			);
-			name = MainStoryboard.storyboard;
 			sourceTree = "<group>";
 		};
 		9670C6A11471F4D3004FA2B7 /* InfoPlist.strings */ = {
@@ -443,6 +459,7 @@
 				9670C6AB1471F4D3004FA2B7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		9670C6AC1471F4D3004FA2B7 /* Build configuration list for PBXNativeTarget "backcountrytrackerTests" */ = {
 			isa = XCConfigurationList;
@@ -451,6 +468,7 @@
 				9670C6AE1471F4D3004FA2B7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 

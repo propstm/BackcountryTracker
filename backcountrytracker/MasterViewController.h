@@ -10,9 +10,15 @@
 
 #import <CoreData/CoreData.h>
 
-@interface MasterViewController : UITableViewController <NSFetchedResultsControllerDelegate>
+@interface MasterViewController : UITableViewController <NSFetchedResultsControllerDelegate, CLLocationManagerDelegate, MKMapViewDelegate>{
+    CLLocationManager *locationMgr;
+    float latitudef;
+    float longitudef;
+}
 
+@property (nonatomic, retain) CLLocationManager *locationMgr;
 @property (strong, nonatomic) NSFetchedResultsController *fetchedResultsController;
 @property (strong, nonatomic) NSManagedObjectContext *managedObjectContext;
-
+@property (nonatomic, assign) float latitudef;
+@property (nonatomic, assign) float longitudef;
 @end
